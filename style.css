@@ -1,34 +1,41 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
-#navbar{
-   display: flex;
-   justify-content:center; 
-   float:unset;
-   width: 100%;
-   background-color: rgba(31, 31, 31, 0.493);
-   z-index: +2;
-   position: fixed;
-   top: auto;
+
+
+
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    float: unset;
+    width: 100%;
+    background-color: rgba(31, 31, 31, 0.493);
+    z-index: +2;
+    position: fixed;
+    top: auto;
 }
-.container{
+
+.container {
     width: 1600px;
     display: flex;
-    justify-content:space-around;
-    flex-direction:row;
+    justify-content: space-around;
+    flex-direction: row;
     align-items: center;
     z-index: +2;
 }
-#logo{
-    width:300px;
+
+#logo {
+    width: 300px;
     padding: 6px 0px;
 }
-#listaul{
+
+#listaul {
     display: flex;
-    flex-direction:row;
+    flex-direction: row;
 }
 
-.linkA{
+.linkA {
     margin: 0px 10px;
     color: white;
     text-decoration: none;
@@ -37,15 +44,16 @@
 }
 
 
-#listaul li a:hover{
-    color: #FFDE59;
-}
-#listaul li a:active{
+#listaul li a:hover {
     color: #FFDE59;
 }
 
-#hero{
-    position: relative;   
+#listaul li a:active {
+    color: #FFDE59;
+}
+
+#hero {
+    position: relative;
     display: flex;
     justify-content: right;
     align-items: center;
@@ -56,82 +64,195 @@
     background-repeat: no-repeat;
     z-index: -2;
 }
-#texthero{
+
+#texthero {
     color: white;
     font-size: 50px;
     user-select: none;
     width: 600px;
-    
+
 }
-#about-us{
+
+#about-us {
     display: flex;
-    justify-content:center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
-#about-us-container{
+
+#about-us-container {
     width: 1200px;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-around;
     align-items: center;
-    flex-direction:row;
+    flex-direction: row;
     flex-wrap: wrap;
     padding: 40px 5px 40px 5px;
 }
-.iconsize{
-    padding:0px 0px 0px 0px;
-     width:250px;
+
+.iconsize {
+    padding: 20px 0px 20px 0px;
+    width: 250px;
 }
-.title1{
-font-size:30px;
-font-weight:bold;
-padding:20px 0px 20px 0px;
-font-family: 'Roboto', sans-serif;
+
+.title1 {
+    font-size: 30px;
+    font-weight: bold;
+    padding: 20px 0px 20px 0px;
+    font-family: 'Roboto', sans-serif;
 }
-.text-about-us{
+
+.text-about-us {
     font-size: 22px;
     font-family: 'Red Hat Display', sans-serif;
     font-weight: bold;
 }
-.boarder{
+
+.boarder {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-    flex-direction:column;
-    width:350px;
-}#imgaboutus{
+    flex-direction: column;
+    width: 350px;
+}
+
+#imgaboutus {
     width: 700px;
-    -webkit-box-shadow: 8px 12px 31px -3px rgba(0,0,0,0.68); 
-    box-shadow: 8px 12px 31px -3px rgba(0,0,0,0.68);
+    -webkit-box-shadow: 8px 12px 31px -3px rgba(0, 0, 0, 0.68);
+    box-shadow: 8px 12px 31px -3px rgba(0, 0, 0, 0.68);
 }
-#contato{
+
+#equipe {
     display: flex;
-    justify-content:center;
-    flex-direction:column;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+
+}
+
+.title4 {
+    font-size: 50px;
+    font-weight: bold;
+    padding: 20px 0px 20px 0px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#containerTeam {
+
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.teamtemplate {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFEDE6;
+    width: 500px;
+    height: 500px;
+    margin: 30px;
+    padding: 30px;
+    border-radius: 287px;
+    -webkit-box-shadow: 9px 11px 26px -3px rgba(0, 0, 0, 0.69);
+    box-shadow: 9px 11px 26px -3px rgba(0, 0, 0, 0.69);
+}
+
+.nameTemplate {
+
+    margin: 20px 0px;
+    font-size: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.descriptionTemplate {
+    width: 300px;
+    text-align: center;
+    font-size: 22px;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: bold;
+}
+
+.imgPerfil {
+    padding: 0px 0px 20px 0px;
+    border-radius: 78% 22% 58% 42% / 42% 72% 28% 58%;
+    width: 300px;
+    height: 300px;
+}
+
+#contato {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
     align-items: center;
 }
-#formcontato{
+
+#formcontato {
     display: flex;
     flex-direction: column;
     width: 600px;
     font-family: 'Roboto', sans-serif;
-    border: solid 1px black;
-    padding:25px;
-    margin:10px 0px 20px 0px
+    border: solid 1px rgb(192, 192, 192);
+    padding: 25px;
+    margin: 10px 0px 20px 0px
 }
-#formcontato input,textarea{
-    padding:15px;
+
+#formcontato input,
+textarea {
+    padding: 15px;
     font-size: 17px;
     margin: 20px;
 }
-#mensagem{
-    resize:none;
+
+#mensagem {
+    resize: none;
 }
 
-footer{
-    
+#contatoTelefone {
+    position: fixed;
+    right: 10px;
+    bottom: 110px;
+    background-color: black;
+    border-radius: 287px;
+    padding: 5px;
+
+}
+
+#contatoTelefone a {
+    display: flex;
+    text-decoration: none;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+#contatoTelefone:hover {
+    background-color: rgb(6, 85, 23);
+}
+
+.linkB {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+}
+
+#logowhatsapp {
+    width: 70px;
+}
+
+footer {
     text-align: center;
     color: white;
     background-color: black;
 }
-footer div h3{
-    padding:10px
+
+footer div h3 {
+    padding: 10px
 }
